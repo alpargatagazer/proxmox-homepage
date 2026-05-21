@@ -1,0 +1,22 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/info-widgets/
+
+- greeting:
+    text_size: xl
+    text: Puyu puyu
+
+- openmeteo:
+    latitude: ${WEATHER_LATITUDE}
+    longitude: ${WEATHER_LONGITUDE}
+    units: metric
+    cache: 5
+
+- resources:
+    cpu: true
+    memory: true
+    disk: /
+
+- search:
+    provider: google
+    target: _blank

@@ -1,0 +1,27 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
+
+title: Alpargata Proxmox
+
+background:
+  image: https://publicdelivery.org/wp-content/uploads/2019/05/Gregory-Crewdson-Untitled-Beer-Dreams-from-Twilight-1998.jpg
+  opacity: 70
+  blur: xs
+
+favicon: https://cdn1.dangerousminds.net/uploads/7/images/STereolab_-_Stunning_Debut_album_single.jpg
+
+color: slate
+
+layout:
+  Infraestructura y Red:
+    style: row
+    columns: 4
+  Almacenamiento y Archivos:
+    style: row
+    columns: 2
+  Aplicaciones y Servicios:
+    style: row
+    columns: 3
+
+language: es

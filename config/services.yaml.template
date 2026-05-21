@@ -1,0 +1,107 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+
+- Infraestructura y Red:
+
+    - Proxmox:
+        icon: sh-proxmox
+        href: https://${DOMAIN_PVE}
+        description: Proxmox Virtualization Platform
+        widget:
+            type: proxmox
+            url: https://${DOMAIN_PVE}
+            username: ${PROXMOX_NODE_USERNAME}
+            password: ${PROXMOX_NODE_PASSWORD}
+            node: ${PROXMOX_NODE_NAME}
+
+    - AdGuard:
+        icon: si-adguard
+        href: https://${DOMAIN_ADGUARD}
+        description: DNS and ad-blocker
+        proxmoxNode: ${PROXMOX_NODE_NAME}
+        proxmoxVMID: 101
+        proxmoxType: lxc
+        widget:
+          type: adguard
+          url: https://${DOMAIN_ADGUARD}
+          username: alpargatagazer
+          password: ${ADGUARD_PASSWORD}
+
+    - Cloudflare Tunnel:
+        icon: sh-cloudflare
+        href: https://dash.cloudflare.com/
+        description: Ramper web tunnel
+        widget:
+          type: cloudflared
+          accountid: ${CLOUDFLARE_ACCOUNT_ID}
+          tunnelid: ${CLOUDFLARE_TUNNEL_ID}
+          key: ${CLOUDFLARE_TUNNEL_KEY}
+
+    - Tailscale:
+        icon: sh-tailscale
+        href: https://login.tailscale.com/
+        description: AdGuard en Tailscale
+        widget:
+            type: tailscale
+            deviceid: ${TAILSCALE_DEVICE_ID}
+            key: ${TAILSCALE_KEY}
+
+- Almacenamiento y Archivos:
+
+    - Nextcloud:
+        icon: sh-nextcloud
+        href: https://${DOMAIN_NEXTCLOUD}
+        description: File sync and share
+        proxmoxNode: ${PROXMOX_NODE_NAME}
+        proxmoxVMID: 105
+        proxmoxType: lxc
+
+    - Filebrowser Quantum:
+        icon: sh-filebrowser-quantum
+        href: https://${DOMAIN_FILEBROWSER}
+        description: File browser and share folder
+        proxmoxNode: ${PROXMOX_NODE_NAME}
+        proxmoxVMID: 109
+        proxmoxType: lxc
+
+- Aplicaciones y Servicios:
+
+    - FreshRSS:
+        icon: sh-freshrss
+        href: https://${DOMAIN_FRESHRSS}
+        description: RSS reader and aggregator
+        proxmoxNode: ${PROXMOX_NODE_NAME}
+        proxmoxVMID: 103
+        proxmoxType: lxc
+        widget:
+            type: freshrss
+            url: https://${DOMAIN_FRESHRSS}
+            username: alpargatagazer
+            password: ${FRESHRSS_PASSWORD}
+
+    - Romm:
+        icon: sh-romm
+        href: https://${DOMAIN_ROMM}
+        description: File sync and share
+        proxmoxNode: ${PROXMOX_NODE_NAME}
+        proxmoxVMID: 106
+        proxmoxType: lxc
+        widget:
+            type: romm
+            url: https://${DOMAIN_ROMM}
+
+    - Ramper web:
+        icon: sh-caddy
+        href: https://${DOMAIN_RAMPER}
+        description: Ramper web hosting
+        proxmoxNode: ${PROXMOX_NODE_NAME}
+        proxmoxVMID: 107
+        proxmoxType: lxc
+        widgets:
+            - type: uptimekuma
+              url: https://${DOMAIN_RAMPER_STATUS}/
+              slug: ramper-local
+            - type: uptimekuma
+              url: https://${DOMAIN_RAMPER_STATUS}/
+              slug: ramper-online

@@ -1,0 +1,7 @@
+---
+
+# Name must match the node name in Proxmox
+${PROXMOX_NODE_NAME}:
+  url: https://${DOMAIN_PVE}
+  token: ${PROXMOX_NODE_USERNAME}
+  secret: ${PROXMOX_NODE_PASSWORD}
