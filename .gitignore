@@ -1,0 +1,19 @@
+.DS_Store
+
+# Ignore sensitive env file
+.env
+
+# Ignore testing logs
+config/logs/
+
+# Ignore configuration files that are generated dynamically
+config/*.yaml
+
+# Allow templates to be checked in
+!config/*.yaml.template
+
+# Ignore unused files in current config
+config/custom.css
+config/custom.js
+config/docker.yaml
+config/kubernetes.yaml

@@ -1,0 +1,25 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Frikismo:
+    - Alpargatagazer Github:
+        - icon: sh-github
+          href: https://github.com/alpargatagazer
+    - This project on Github:
+        - icon: sh-homepage
+          href: https://github.com/alpargatagazer/proxmox-homepage
+    - Proxmox Community Scripts:
+        - icon: sh-proxmox
+          href: https://community-scripts.org/
+
+- Web Ramper:
+    - Web pública:
+        - icon: https://raw.githubusercontent.com/alpargatagazer/ramper-web/main/public/favicon.webp
+          href: https://ramper.band
+    - Repo:
+        - icon: sh-github
+          href: https://github.com/alpargatagazer/ramper-web
+    - Repo deploy:
+        - icon: sh-github
+          href: https://github.com/alpargatagazer/ramper-web-deploy
