@@ -17,3 +17,7 @@ config/custom.css
 config/custom.js
 config/docker.yaml
 config/kubernetes.yaml
+
+# Markdown files (except README)
+*.md
+!README.md
