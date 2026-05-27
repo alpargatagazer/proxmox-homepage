@@ -1,5 +1,4 @@
 ---
-
 # Name must match the node name in Proxmox
 ${PROXMOX_NODE_NAME}:
   url: https://${DOMAIN_PVE}

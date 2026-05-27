@@ -2,16 +2,16 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/configs/bookmarks
 
-- Frikismo:
-    - Alpargatagazer Github:
-        - icon: sh-github
-          href: https://github.com/alpargatagazer
-    - This project on Github:
-        - icon: sh-homepage
-          href: https://github.com/alpargatagazer/proxmox-homepage
+- Proxmox:
     - Proxmox Community Scripts:
         - icon: sh-proxmox
           href: https://community-scripts.org/
+    - Este proyecto en Github:
+        - icon: sh-homepage
+          href: https://github.com/alpargatagazer/proxmox-homepage
+    - Documentación de Homepage:
+        - icon: sh-homepage
+          href: https://gethomepage.dev/
 
 - Web Ramper:
     - Web pública:
@@ -23,3 +23,14 @@
     - Repo deploy:
         - icon: sh-github
           href: https://github.com/alpargatagazer/ramper-web-deploy
+
+- Alpargatify:
+    - Web pública:
+        - icon: sh-navidrome
+          href: https://${DOMAIN_ALPARGATIFY}
+    - Viejo Repo:
+        - icon: sh-github
+          href: https://github.com/alpargatagazer/alpargatify
+    - Bot repo:
+        - icon: sh-github
+          href: https://github.com/alpargatagazer/alpargotobot

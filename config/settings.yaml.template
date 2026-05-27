@@ -17,18 +17,28 @@ useEqualHeights: true
 layout:
   Infraestructura y red:
     Infraestructura:
-        header: false
-        style: row
-        columns: 2
+      header: false
+      style: row
+      columns: 2
     Red:
-        header: false
-        style: row
-        columns: 3
+      header: false
+      style: row
+      columns: 3
   Almacenamiento y Archivos:
     style: row
     columns: 2
   Aplicaciones y Servicios:
-    style: row
-    columns: 3
+    app1:
+      header: false
+      style: row
+      columns: 2
+    app2:
+      header: false
+      style: row
+      columns: 3
+    app3:
+      header: false
+      style: row
+      columns: 2
 
 language: es
