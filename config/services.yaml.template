@@ -81,6 +81,19 @@
 
 - Aplicaciones y Servicios:
     - app1:
+        - FreshRSS:
+            icon: sh-freshrss
+            href: https://${DOMAIN_FRESHRSS}
+            description: Lector y agregador RSS
+            proxmoxNode: ${PROXMOX_NODE_NAME}
+            proxmoxVMID: 103
+            proxmoxType: lxc
+            widget:
+              type: freshrss
+              url: https://${DOMAIN_FRESHRSS}
+              username: alpargatagazer
+              password: ${FRESHRSS_PASSWORD}
+
         - BentoPDF:
             icon: sh-bentopdf
             href: https://${DOMAIN_BENTO}
@@ -97,20 +110,6 @@
             proxmoxVMID: 113
             proxmoxType: lxc
 
-    - app2:
-        - FreshRSS:
-            icon: sh-freshrss
-            href: https://${DOMAIN_FRESHRSS}
-            description: Lector y agregador RSS
-            proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 103
-            proxmoxType: lxc
-            widget:
-              type: freshrss
-              url: https://${DOMAIN_FRESHRSS}
-              username: alpargatagazer
-              password: ${FRESHRSS_PASSWORD}
-
         - Romm:
             icon: sh-romm
             href: https://${DOMAIN_ROMM}
@@ -122,19 +121,7 @@
               type: romm
               url: https://${DOMAIN_ROMM}
 
-        - Tandoor Recipes:
-            icon: sh-tandoor-recipes
-            href: https://${DOMAIN_TANDOOR}
-            description: Recetas y más
-            proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 114
-            proxmoxType: lxc
-            widget:
-              type: tandoor
-              url: https://${DOMAIN_TANDOOR}
-              key: ${TANDOOR_KEY}
-
-    - app3:
+    - app2:
         - Navidrome:
             icon: sh-navidrome
             href: https://${DOMAIN_NAVIDROME}
