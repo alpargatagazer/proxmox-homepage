@@ -20,13 +20,17 @@
             href: https://${DOMAIN_PROXMENUX}
             description: Otro PVE monitor
 
-        - Netdata:
-            icon: si-netdata
-            href: https://${DOMAIN_NETDATA}
-            description: PVE monitor
+        - Home Assistant:
+            icon: si-homeassistant
+            href: https://${DOMAIN_HOMEASSISTANT}
+            description: Domótica y automatización
+            proxmoxNode: ${PROXMOX_NODE_NAME}
+            proxmoxVMID: 117
+            proxmoxType: qemu
             widget:
-              type: netdata
-              url: https://${DOMAIN_NETDATA}
+              type: homeassistant
+              url: https://${DOMAIN_HOMEASSISTANT}
+              key: ${HOMEASSISTANT_KEY}
 
     - Red:
         - AdGuard:
@@ -110,16 +114,13 @@
             proxmoxVMID: 113
             proxmoxType: lxc
 
-        - Romm:
-            icon: sh-romm
-            href: https://${DOMAIN_ROMM}
-            description: Biblioteca y archivador de juegos
+        - MeTube:
+            icon: sh-metube
+            href: https://${DOMAIN_METUBE}
+            description: Descargas de YouTube
             proxmoxNode: ${PROXMOX_NODE_NAME}
-            proxmoxVMID: 106
+            proxmoxVMID: 116
             proxmoxType: lxc
-            widget:
-              type: romm
-              url: https://${DOMAIN_ROMM}
 
     - app2:
         - Navidrome:
